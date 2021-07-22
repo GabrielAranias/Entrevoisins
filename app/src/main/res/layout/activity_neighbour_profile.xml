@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/neighbourProfile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ecf1f4"
+    android:orientation="vertical"
+    tools:context=".ui.neighbour_list.NeighbourProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="280dp">
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/fake_avatar"
+                android:scaleType="centerCrop"
+                android:contentDescription="@string/avatar"
+                />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_margin="20dp"
+                android:text="@string/name"
+                android:textSize="30sp"
+                android:textColor="@android:color/white"/>
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:background="@drawable/layout_bg">
+
+                        <TextView
+                            android:id="@+id/name2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="14dp"
+                            android:text="@string/name"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+
+                        <View
+                            android:id="@+id/line1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@+id/name2"
+                            android:background="#d3d3d3"
+                            />
+
+                        <TextView
+                            android:id="@+id/address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="14dp"
+                            android:layout_below="@+id/line1"
+                            android:drawableStart="@drawable/baseline_room_24"
+                            android:drawablePadding="10dp"
+                            android:text="@string/address"
+                            android:textColor="#808080"
+                            android:textSize="14sp"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/phoneNumber"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="14dp"
+                            android:layout_below="@+id/address"
+                            android:drawableStart="@drawable/baseline_phone_24"
+                            android:drawablePadding="10dp"
+                            android:text="@string/phoneNumber"
+                            android:textColor="#808080"
+                            android:textSize="14sp"
+                            android:gravity="center_vertical"/>
+
+                        <TextView
+                            android:id="@+id/socialMedia"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="14dp"
+                            android:layout_below="@+id/phoneNumber"
+                            android:drawableStart="@drawable/baseline_language_24"
+                            android:drawablePadding="10dp"
+                            android:text="@string/socialMedia"
+                            android:textColor="#808080"
+                            android:textSize="14sp"
+                            android:gravity="center_vertical"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="14dp"
+                    android:background="@drawable/layout_bg">
+
+                        <TextView
+                            android:id="@+id/aboutMeTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="14dp"
+                            android:text="@string/aboutMeTitle"
+                            android:textSize="20sp"
+                            android:textColor="@android:color/black"/>
+
+                        <View
+                            android:id="@+id/line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_below="@+id/aboutMeTitle"
+                            android:background="#d3d3d3"/>
+
+                        <TextView
+                            android:id="@+id/aboutMe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="14dp"
+                            android:layout_below="@+id/line2"
+                            android:text="@string/aboutMe"
+                            android:textColor="#808080"
+                            android:textSize="14sp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/favoritesFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:backgroundTint="#ecf1f4"
+        android:src="@drawable/ic_star_border_yellow_24dp"
+        android:contentDescription="@string/favoritesFab"
+        app:borderWidth="0dp"
+        app:layout_anchor="@id/avatar"
+        app:layout_anchorGravity="bottom|end"
+        app:rippleColor="@color/favoritesColor"/>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Entrevoisins</string>
+    <string name="tab_neighbour_title">My neighbours</string>
+    <string name="tab_favorites_title">Favorites</string>
+    <string name="activity_new_neighbour">New neighbour</string>
+    <string name="name">Nom</string>
+    <string name="avatar">Avatar of neighbour</string>
+    <string name="address">Adresse"</string>
+    <string name="phoneNumber">Numéro de téléphone</string>
+    <string name="socialMedia">Lien réseau social</string>
+    <string name="aboutMeTitle">A propos de moi</string>
+    <string name="aboutMe">Ceci est un texte à propos de moi.</string>
+    <string name="favoritesFab">Favorites floating action button</string>
+</resources>
